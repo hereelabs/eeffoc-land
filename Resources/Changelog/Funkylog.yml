@@ -796,3 +796,46 @@ Entries:
       message: Changed BSO implanter to be bluespace instead of syndi
   id: 95
   time: '2024-12-22T18:17:20.0000000+00:00'
+- author: JohnnyDangerSpace
+  changes:
+    - type: Tweak
+      message: Changed thief rates
+  id: 96
+  time: '2024-12-23T00:23:27.0000000+00:00'
+- author: hereelabs
+  changes:
+    - type: Add
+      message: >-
+        Planet-Side Hot Springs map and Party Bus Shuttle for "Hot Springs"
+        Event
+  id: 97
+  time: '2024-12-23T04:57:20.0000000+00:00'
+- author: corresp0nd
+  changes:
+    - type: Add
+      message: >-
+        Harpy wings (currently on their right arm lol) now give you the ability
+        to fly.
+    - type: Add
+      message: >-
+        Severing wings from a harpy will render it unable to fly, and
+        conversely, reattaching them to yourself will grant you that ability
+        instead.
+    - type: Tweak
+      message: Harpies can no longer wear shoes. Have fun with space wind.
+    - type: Tweak
+      message: Harpies can now imitate pianos, church organs and violins.
+    - type: Tweak
+      message: >-
+        Harpies are now immune to mice traps, landmines and glass
+        shards/caltrops.
+    - type: Tweak
+      message: Harpies now have acceleration when theres no gravity, akin to moths.
+  id: 98
+  time: '2024-12-23T06:51:04.0000000+00:00'
+- author: JohnnyDangerSpace
+  changes:
+    - type: Fix
+      message: Fixed ash ascended heretic's limbs falling off
+  id: 99
+  time: '2024-12-23T07:32:19.0000000+00:00'
