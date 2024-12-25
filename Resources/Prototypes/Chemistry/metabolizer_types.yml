@@ -30,6 +30,10 @@
   name: metabolizer-type-rat
 
 - type: metabolizerType
+  id: Rodentia
+  name: metabolizer-type-rodentia
+  
+- type: metabolizerType
   id: Plant
   name: metabolizer-type-plant
 

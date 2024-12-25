@@ -54,6 +54,15 @@
       state: not_enough_nitro
   name: alerts-low-nitrogen-name
   description: alerts-low-nitrogen-desc
+  
+- type: alert
+  id: LowAmmonia
+  category: Breathing
+  icons:
+    - sprite: /Textures/Interface/Alerts/breathing.rsi
+      state: not_enough_ammonia
+  name: alerts-low-ammonia-name
+  description: alerts-low-ammonia-desc
 
 - type: alert
   id: Toxins

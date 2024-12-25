@@ -131,6 +131,18 @@
   recognizable: true
   physicalDesc: reagent-physical-desc-pungent
   slippery: false
+  
+- type: reagent
+  parent: Blood
+  id: MiasmaBlood
+  name: reagent-name-miasma-blood
+  group: Biological
+  desc: reagent-desc-miasma-blood
+  flavor: bitter
+  color: "#783D7E"
+  recognizable: true
+  physicalDesc: reagent-physical-desc-pungent
+  slippery: true
 
 - type: reagent
   id: ZombieBlood

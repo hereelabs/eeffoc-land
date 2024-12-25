@@ -1,0 +1,16 @@
+- type: entity
+  id: OrganRodentiaLungs
+  parent: OrganHumanLungs
+  description: "The lungs of a rodentia, they inhale ammonia, and exhale miasma. Any form of gaseous oxygen is lethally toxic if breathed in, similar to Vox."
+  suffix: "rodentia"
+  name: rodentia lungs # Shitmed
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Rodentia/organs.rsi
+  - type: Metabolizer
+    metabolizerTypes: [ Rodentia ]
+  - type: Lung
+    alert: LowAmmonia
+  - type: Item
+    size: Small
+    heldPrefix: lungs
