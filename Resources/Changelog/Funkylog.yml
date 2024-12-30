@@ -839,3 +839,138 @@ Entries:
       message: Fixed ash ascended heretic's limbs falling off
   id: 99
   time: '2024-12-23T07:32:19.0000000+00:00'
+- author: taydeo
+  changes:
+    - type: Tweak
+      message: Changeling invisibility goes away quicker, even when crawling.
+  id: 100
+  time: '2024-12-23T18:46:07.0000000+00:00'
+- author: rottenheadphones
+  changes:
+    - type: Add
+      message: added plasma, n2o gas miners to atmos
+    - type: Add
+      message: >-
+        added round-start singularity generators on containment field sector for
+        every map
+    - type: Remove
+      message: deleted mapped teg setups
+    - type: Tweak
+      message: buffed oxygen / nitrogen gas miners
+  id: 101
+  time: '2024-12-23T19:22:43.0000000+00:00'
+- author: marc-pelletier
+  changes:
+    - type: Add
+      message: Added sprites for /tg/ gases
+  id: 102
+  time: '2024-12-23T19:30:09.0000000+00:00'
+- author: JohnnyDangerSpace
+  changes:
+    - type: Tweak
+      message: Heretic can spawn on low pop
+    - type: Fix
+      message: Fixes lowpop getting set to extended if the heretic player req isnt met
+  id: 103
+  time: '2024-12-24T00:15:36.0000000+00:00'
+- author: Teromax34
+  changes:
+    - type: Add
+      message: added cyns katyn plush
+  id: 104
+  time: '2024-12-24T00:18:35.0000000+00:00'
+- author: KingFroozy, tay
+  changes:
+    - type: Add
+      message: Roboticist role added, now we wait for the mappers to get to it.
+  id: 105
+  time: '2024-12-25T03:08:09.0000000+00:00'
+- author: ' '
+  changes:
+    - type: Tweak
+      message: Changes to the "Unfortunate Captain" plush.
+  id: 106
+  time: '2024-12-25T06:14:32.0000000+00:00'
+- author: TheShuEd
+  changes:
+    - type: Fix
+      message: 'Fixed space chunks loot spawning '
+  id: 107
+  time: '2024-12-26T20:35:50.0000000+00:00'
+- author: AstroDogeDX
+  changes:
+    - type: Fix
+      message: Medborgs can now perform surgery again.
+  id: 108
+  time: '2024-12-27T02:11:33.0000000+00:00'
+- author: Mocho, Deltanedas
+  changes:
+    - type: Add
+      message: >-
+        Added a CVAR that lets server operators decide if players should be able
+        to use mech guns without them being inside of a mech. Set to true by
+        default.
+    - type: Tweak
+      message: Reworked IPC fire mechanics to not round remove them from a tiny fire.
+    - type: Tweak
+      message: IPCs cannot be picked as impersonation objectives for Changelings
+    - type: Tweak
+      message: IPCs cannot be cloned now.
+    - type: Tweak
+      message: Entity hands get blocked when they are inside of a mech now.
+    - type: Tweak
+      message: Mech punches or mech drills cannot be wideswung.
+    - type: Tweak
+      message: The mech PKA now consumes basically no energy.
+    - type: Fix
+      message: IPCs are finally not 3x more flammable than a plasmaman.
+    - type: Fix
+      message: >-
+        Fixed scram implants breaking your character if you use them inside of a
+        mech.
+    - type: Fix
+      message: Fixed EMPs completely bricking mech weapons.
+    - type: Fix
+      message: >-
+        Fixed IPC welding heals not checking if the targeted part is also
+        damaged.
+  id: 109
+  time: '2024-12-27T04:11:52.0000000+00:00'
+- author: marc-pelletier
+  changes:
+    - type: Add
+      message: Added frezon canister sprite
+  id: 110
+  time: '2024-12-28T23:16:14.0000000+00:00'
+- author: ' '
+  changes:
+    - type: Remove
+      message: Funky Station is now less snowsday.
+  id: 111
+  time: '2024-12-29T02:52:09.0000000+00:00'
+- author: 88tv
+  changes:
+    - type: Add
+      message: Janitorial service lights have been added to most maps.
+    - type: Add
+      message: Most janitorial departments now have high-capacity water tanks.
+    - type: Fix
+      message: >-
+        Janitorial light buttons which previously did not have janitor button
+        frames now do have janitor button frames.
+    - type: Tweak
+      message: A book was placed near a useful water tank in Oasis.
+  id: 112
+  time: '2024-12-29T20:41:30.0000000+00:00'
+- author: JohnnyDangerSpace
+  changes:
+    - type: Tweak
+      message: You can now do surgery on yourself!
+  id: 113
+  time: '2024-12-29T23:29:12.0000000+00:00'
+- author: ' '
+  changes:
+    - type: Add
+      message: New map Roid
+  id: 114
+  time: '2024-12-30T02:58:17.0000000+00:00'
