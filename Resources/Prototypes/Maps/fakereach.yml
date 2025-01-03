@@ -1,0 +1,51 @@
+- type: gameMap
+  id: NotReach
+  mapName: 'Not Reach'
+  mapPath: /Maps/fakereach.yml
+  minPlayers: 7
+  maxPlayers: 30
+  stations:
+    NotReach:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Not Reach'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'SC'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency.yml
+        - type: StationJobs
+          availableJobs:
+            # Goobstation - TODO: add bso and ntr
+            Captain: [ 1, 1 ]
+            HeadOfSecurity: [ 1, 1 ]
+            SecurityOfficer: [ 2, 2 ]
+            Quartermaster: [ 1, 1 ]
+            CargoTechnician: [ 2, 2 ]
+            SalvageSpecialist: [ 2, 2 ]
+            Bartender: [ 1, 1 ]
+            Botanist: [ 2, 2 ]
+            Chef: [ 1, 1 ]
+            MedicalDoctor: [ 2, 2 ]
+            MedicalIntern: [ 1, 1 ]
+            Chemist: [ 1, 1 ]
+            ChiefMedicalOfficer: [ 1, 1 ]
+            Janitor: [ 1, 1 ]
+            AtmosphericTechnician: [ 2, 2 ]
+            StationEngineer: [ 2, 2 ]
+            TechnicalAssistant: [ 1, 1 ]
+            ResearchDirector: [ 1, 1 ]
+            Scientist: [ 2, 2 ]
+            Roboticist: [ 1, 1 ]
+            ResearchAssistant: [ 1, 1 ]
+            Passenger: [ -1, -1 ]
+
+        # Goobstation blob-config-start LOW
+        - type: StationBlobConfig
+          stageBegin: 15
+          stageCritical: 200
+          stageTheEnd: 400
+        # Goobstation blob-config-end
+
+
