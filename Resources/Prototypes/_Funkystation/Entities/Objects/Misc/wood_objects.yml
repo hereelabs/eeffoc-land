@@ -1,0 +1,124 @@
+- type: entity
+  name: wooden rake
+  parent: BaseItem
+  id: HydroponicsToolRake
+  description: It's used for removing weeds or scratching your back.
+  components:
+  - type: Tag
+    tags:
+    - Hoe
+    - BotanyHoe
+  - type: Sprite
+    sprite: _Funkystation/Objects/Misc/wood_rake.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: 135
+    swingLeft: true
+    damage:
+      types:
+        Slash: 6
+        Blunt: 2
+  - type: Item
+    sprite: _Funkystation/Objects/Misc/wood_rake.rsi
+    
+- type: entity
+  parent: BaseItem
+  id: WoodBucket
+  name: wooden bucket
+  description: It's a wooden bucket. Holds liquids and reagents. 
+  components:
+  - type: Drink
+    solution: bucket
+    ignoreEmpty: true
+  - type: Clickable
+  - type: Sprite
+    sprite: _Funkystation/Objects/Misc/wood_bucket.rsi
+    layers:
+    - state: icon
+    - map: ["enum.SolutionContainerLayers.Fill"]
+      state: fill-1
+      visible: false
+  - type: Item
+    size: Normal
+  - type: Clothing
+    sprite: _Funkystation/Objects/Misc/wood_bucket.rsi
+    slots:
+    - HEAD
+    quickEquip: false
+  - type: SolutionContainerManager
+    solutions:
+      bucket:
+        maxVol: 250
+  - type: MixableSolution
+    solution: bucket
+  - type: SolutionTransfer
+    transferAmount: 100
+    maxTransferAmount: 100
+    minTransferAmount: 10
+    canChangeTransferAmount: true
+  - type: UserInterface
+    interfaces:
+      enum.TransferAmountUiKey.Key:
+        type: TransferAmountBoundUserInterface
+  - type: MeleeWeapon
+    soundNoDamage:
+      path: "/Audio/Effects/Fluids/splat.ogg"
+    damage:
+      types:
+        Blunt: 0
+  - type: Spillable
+    solution: bucket
+  - type: SpillWhenWorn
+    solution: bucket
+  - type: DrawableSolution
+    solution: bucket
+  - type: RefillableSolution
+    solution: bucket
+  - type: DrainableSolution
+    solution: bucket
+  - type: SolutionItemStatus
+    solution: bucket
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 3
+    fillBaseName: fill-
+  - type: ExaminableSolution
+    solution: bucket
+  - type: Tag
+    tags:
+      - Bucket
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 50
+  - type: DnaSubstanceTrace
+
+- type: entity
+  parent: [ContentsExplosionResistanceBase]
+  id: WoodBarrel
+  name: wooden barrel
+  description: A huge barrel that can store all sorts of things.
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Funkystation/Objects/Misc/wood_barrel.rsi
+    state: barrel_closed
+  - type: Pullable
+  - type: InteractionOutline
+  - type: Physics
+  - type: Storage
+    grid:
+    - 0,0,8,4
+    maxItemSize: Huge
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  # to prevent bag open/honk spam
+  - type: UseDelay
+    delay: 2
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
