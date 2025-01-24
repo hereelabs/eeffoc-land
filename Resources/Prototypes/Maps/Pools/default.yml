@@ -16,9 +16,10 @@
   - Origin
   - Saltern
   - Packed
-  - Reach
+  #- Reach # funkystation - operation revive lrp
+  - roid_outpost
   - Train
   - FlandHighPop
   - OasisHighPop
   #- Barratry # Goobstation - Re-add barratry - Funkystation - Barratrauma
-  - Kettle # Goobstation - Re-add kettle (before it was gemini!)
+  - Kettle
