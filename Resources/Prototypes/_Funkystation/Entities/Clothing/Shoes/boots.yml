@@ -1,0 +1,18 @@
+- type: entity
+  parent: [ClothingShoesBaseButcherable, BaseMajorContraband]
+  id: ClothingShoesSamurai
+  name: samurai boots
+  description: Nano-enhanced boots with built-in magnetic suction cups, similar to that of the space ninja.
+  components:
+  - type: Sprite
+    sprite: _Funkystation/Clothing/Shoes/Boots/samurai.rsi
+  - type: Clothing
+    sprite: _Funkystation/Clothing/Shoes/Boots/samurai.rsi
+  - type: NoSlip
+  - type: Magboots # always have gravity because le suction cups
+  - type: ClothingSpeedModifier
+    # ninja are masters of sneaking around relatively quickly, won't break cloak
+    walkModifier: 1.1
+    sprintModifier: 1.3
+  - type: FootstepModifier
+    footstepSoundCollection: null

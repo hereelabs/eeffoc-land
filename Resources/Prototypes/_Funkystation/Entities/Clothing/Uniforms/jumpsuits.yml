@@ -192,3 +192,54 @@
     sprite: Clothing/Uniforms/Jumpsuit/nanotrasen.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/nanotrasen.rsi
+    
+# funkystation - new clothing items every day ::0)
+# spritework, as always, by meijunkie aka mingebag
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: ClothingUniformJumpsuitExplorer
+  name: explorer jumpsuit
+  description: This suit is well worn, but not dirty. It seems to have gone on quite the adventures.
+  components:
+  - type: Sprite
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/explorer.rsi
+  - type: Clothing
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/explorer.rsi
+    
+- type: entity
+  parent: [ClothingUniformBase, BaseSyndicateContraband, BaseToggleClothing]
+  id: ClothingUniformJumpsuitWaldo
+  name: waldo jumpsuit
+  description: You're having a hard time keeping track of this suit, It just keeps trying to elude you.
+  components:
+  - type: Sprite
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/waldo.rsi
+  - type: Clothing
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/waldo.rsi
+  - type: ToggleClothing
+    action: ActionTogglePhaseCloak
+    disableOnUnequip: true
+  - type: ComponentToggler
+    parent: true
+    components:
+    - type: Stealth
+      minVisibility: 0.1
+      lastVisibility: 0.1
+  #- type: PowerCellDraw
+  #  drawRate: 0 # 200 seconds on the default cell
+  #- type: ToggleCellDraw
+  - type: NinjaSuit
+  - type: UseDelay
+    delay: 5 # disable time
+    
+- type: entity
+  parent: [ClothingUniformBase]
+  id: ClothingUniformJumpsuitBuddha
+  name: buddhist jumpsuit
+  description: As expected, the suit is very tidy and clean. It looks like it was ironed pretty recently.
+  components:
+  - type: Sprite
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/buddha.rsi
+  - type: Clothing
+    sprite: _Funkystation/Clothing/Uniforms/Jumpsuit/buddha.rsi

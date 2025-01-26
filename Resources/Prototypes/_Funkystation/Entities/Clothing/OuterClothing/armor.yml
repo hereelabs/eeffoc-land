@@ -1,0 +1,22 @@
+- type: entity
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseMajorContraband]
+  id: ClothingOuterArmorSamurai
+  name: samurai armor
+  description: A heavily armored suit that protects against excessive damage, fit for a samurai.
+  components:
+  - type: Sprite
+    sprite: _Funkystation/Clothing/OuterClothing/Armor/samurai.rsi
+  - type: Clothing
+    sprite: _Funkystation/Clothing/OuterClothing/Armor/samurai.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
+        Radiation: 0
+        Caustic: 0.8
+  - type: GroupExamine
+  - type: ProtectedFromStepTriggers
+    slots: WITHOUT_POCKET

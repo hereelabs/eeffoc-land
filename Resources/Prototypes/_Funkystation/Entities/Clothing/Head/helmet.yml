@@ -1,0 +1,18 @@
+- type: entity
+  parent: [ClothingHeadBase, BaseMajorContraband]
+  id: ClothingHeadHelmetSamurai
+  name: samurai helmet
+  description: A well crafted helmet made high quality materials, forged with god-knows-what.
+  components:
+  - type: Sprite
+    sprite: _Funkystation/Clothing/Head/Helmets/samurai.rsi
+  - type: Clothing
+    sprite: _Funkystation/Clothing/Head/Helmets/samurai.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - HeadTop
+    - HeadSide

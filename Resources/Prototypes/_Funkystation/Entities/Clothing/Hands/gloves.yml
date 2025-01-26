@@ -1,0 +1,21 @@
+- type: entity
+  parent: [ClothingHandsBase, BaseToggleClothing, BaseMajorContraband]
+  id: ClothingHandsGlovesSamurai
+  name: samurai gloves
+  description: These black gloves insulate from electricity, provide fire resistance, and look cool. A perfect fit for a samurai.
+  components:
+  - type: Sprite
+    sprite: _Funkystation/Clothing/Hands/Gloves/samurai.rsi
+    layers:
+    - state: icon
+      map: [ "enum.ToggleVisuals.Layer" ]
+  - type: Clothing
+    sprite: _Funkystation/Clothing/Hands/Gloves/samurai.rsi
+  - type: Appearance
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-nanomachines
+  - type: FingerprintMask
+  - type: Thieving
+    stripTimeReduction: 1
+    stealthy: true

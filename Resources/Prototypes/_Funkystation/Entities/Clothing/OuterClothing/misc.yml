@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterBathrobe
+  name: bathrobe
+  description: Not the best thing to be walking around town in, but you'll manage.
+  components:
+  - type: Sprite
+    sprite: _Funkystation/Clothing/OuterClothing/Misc/bathrobe.rsi
+  - type: Clothing
+    sprite: _Funkystation/Clothing/OuterClothing/Misc/bathrobe.rsi
